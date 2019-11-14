@@ -1,0 +1,21 @@
+#!/usr/bin/sh
+
+
+
+# ps1 with color
+PS1='\[\033[31m\]>> \[\033[01;36m\]\u\[\033[31m\]@\[\033[01;36m\]\h\[\033[35m\]:\[\033[01;31m\]\W\[\033[33m\]\$ >>\[\033[37m\] '
+
+#export LS_OPTIONS='--color=auto'
+# show color
+export CLICOLOR='yes'
+# set color
+export LSCOLORS="ExGxaxdxBxegedabagacad"
+
+
+# alias
+alias ll='ls -alF'
+alias grep='grep -n --color'
+alias cp='cp -i'
+alias rm='rm -i'
+alias mv='mv -i'
+
