@@ -1,0 +1,18 @@
+# macos zsh config 
+
+# color term like 'ls'
+export CLICOLOR='Yes'
+# custom shell prompt
+autoload -U colors && colors
+
+PROMPT="%F{red}>>%f %B%F{cyan}%n%f%F{red}@%f%F{cyan}%m%f%b%F{magenta}:%f%F{red}%1~%f%F{yellow}%# >>%f "
+
+# self defined aliases
+alias ll='ls -alF'
+alias la='ls -a'
+alias grep='grep -n --color'
+
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.ustc.edu.cn/brew.git"
+export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.ustc.edu.cn/homebrew-core.git"
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
+
